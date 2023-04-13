@@ -23,6 +23,7 @@ function Catalog(){
             {
                 data ? data.map((value,index)=>(
                     <Card
+                        key={index}
                         id={value.id}
                         title={value.title}
                         img={value.src}
