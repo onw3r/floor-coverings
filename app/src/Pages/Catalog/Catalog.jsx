@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './CatalogStyle.css';
-import Card from '../Components/Card/Card';
+import Card from '../../Components/Card/Card';
 
 function Catalog(){
     const [data, setData] = useState();

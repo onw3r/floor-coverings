@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
-import Catalog from './Pages/Catalog';
+import Catalog from './Pages/Catalog/Catalog';
+import Main from './Pages/Main/Main';
+
 
 function App() {
   function Layout(){
@@ -18,8 +20,10 @@ function App() {
   return (
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route index path='' element={<Catalog/>}/>
+          <Route index path='' element={<Main/>} />
+          <Route path='/catalog' element={<Catalog/>}/>
         </Route>
+
       </Routes>
   );
 }

@@ -7,10 +7,10 @@ function Main() {
             <nav className='nav-bar'>
                 <ul className='nav-container'>
                     <li>
-                        <Link>Floor coverings</Link>
+                        <Link to={'/'}>Floor coverings</Link>
                     </li>
                     <li>
-                        <Link>Каталог</Link>
+                        <Link to={'/catalog'}>Каталог</Link>
                     </li>
                 </ul>
             </nav>
