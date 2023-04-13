@@ -1,0 +1,13 @@
+.card-wrapper{
+    width: 270px;
+    height: 420px;
+    background-color: #f3f3f3;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 270px;
+    height: 220px;
+}
