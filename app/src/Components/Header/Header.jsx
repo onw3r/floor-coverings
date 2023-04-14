@@ -12,6 +12,9 @@ function Main() {
                     <li>
                         <Link to={'/catalog'}>Каталог</Link>
                     </li>
+                    <li>
+                        <Link to={'/calculator'}>Калькулятор</Link>
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -1,0 +1,8 @@
+.cover{
+    background-color: #ccc;
+    border: 1px solid black;
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+}

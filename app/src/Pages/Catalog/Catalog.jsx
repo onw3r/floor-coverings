@@ -4,6 +4,7 @@ import Card from '../../Components/Card/Card';
 
 function Catalog(){
     const [data, setData] = useState();
+    const [search, setSearch] = useState('');
 
     const jsonFormat = function (response) {
         return response.json()
@@ -18,19 +19,28 @@ function Catalog(){
     useEffect(() => {
         fetchData()
     }, [])
-    return (
-        <div className='content-wrapper'>
-            {
-                data ? data.map((value,index)=>(
-                    <Card
-                        key={index}
-                        id={value.id}
-                        title={value.title}
-                        img={value.src}
-                    />
-                )):''
-            }
 
+    const filteredData = data ? data.filter(element=>{
+        return element.title.toLowerCase().includes(search.toLowerCase())
+    }):'';
+    return (
+        <div className='catalog-container'>
+            <h1>Напольные покрытия</h1>
+            <div className='search-wrapper'>
+                <input className='search-input' type='text' placeholder='Поиск по каталогу' name='search' onChange={(e)=>{setSearch(e.target.value)}}/>
+            </div>
+            <div className='catalog-wrapper'>
+                {
+                    filteredData ? filteredData.map((value,index)=>(
+                        <Card
+                            key={index}
+                            id={value.id}
+                            title={value.title}
+                            img={value.src}
+                        />
+                    )):'loading...'
+                }
+            </div>
         </div>
     );
 };
