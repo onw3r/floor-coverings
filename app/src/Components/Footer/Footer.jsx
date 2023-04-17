@@ -3,7 +3,7 @@ import './FooterStyle.css';
 function Footer() {
     return (
         <footer>
-            <div>© 2023 магазин напольных покрытий</div>
+            <div className='footer-copyright'>© 2023 магазин напольных покрытий</div>
         </footer>
     );
 }

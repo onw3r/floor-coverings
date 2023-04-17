@@ -12,7 +12,6 @@ function Main() {
                     <li>
                         <Link className='nav-link' to={'/catalog'}>Каталог</Link>
                     </li>
-
                 </ul>
             </nav>
         </header>
