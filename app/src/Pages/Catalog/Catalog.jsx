@@ -5,7 +5,6 @@ import Card from '../../Components/Card/Card';
 function Catalog(){
     const [data, setData] = useState();
     const [search, setSearch] = useState('');
-
     const jsonFormat = function (response) {
         return response.json()
     }
@@ -23,9 +22,10 @@ function Catalog(){
     const filteredData = data ? data.filter(element=>{
         return element.title.toLowerCase().includes(search.toLowerCase())
     }):'';
+
     return (
         <div className='catalog-container'>
-            <h1>Напольные покрытия</h1>
+            <h1 className='catalog-title'>Напольные покрытия</h1>
             <div className='search-wrapper'>
                 <input className='search-input' type='text' placeholder='Поиск по каталогу' name='search' onChange={(e)=>{setSearch(e.target.value)}}/>
             </div>
@@ -41,6 +41,7 @@ function Catalog(){
                     )):'loading...'
                 }
             </div>
+
         </div>
     );
 };

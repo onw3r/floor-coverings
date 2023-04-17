@@ -7,14 +7,12 @@ function Main() {
             <nav className='nav-bar'>
                 <ul className='nav-container'>
                     <li>
-                        <Link to={'/'}>Floor coverings</Link>
+                        <Link className='nav-link' to={'/'}>Floor coverings</Link>
                     </li>
                     <li>
-                        <Link to={'/catalog'}>Каталог</Link>
+                        <Link className='nav-link' to={'/catalog'}>Каталог</Link>
                     </li>
-                    <li>
-                        <Link to={'/calculator'}>Калькулятор</Link>
-                    </li>
+
                 </ul>
             </nav>
         </header>

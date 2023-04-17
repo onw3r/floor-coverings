@@ -1,0 +1,24 @@
+.content-wrapper{
+    margin-top: 20px;
+}
+.main-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-company{
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F7F7F9;
+}
+.about-company-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-company-description{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}

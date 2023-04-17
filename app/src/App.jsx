@@ -4,7 +4,9 @@ import { Outlet, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Catalog from './Pages/Catalog/Catalog';
 import Main from './Pages/Main/Main';
-import Calculator from './Pages/Calculator/Calculator';
+import Item from './Pages/Item/Item';
+import Footer from './Components/Footer/Footer';
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
             <main>
                 <Outlet/>
             </main>
+            <Footer/>
         </div>
     )
   }
@@ -23,7 +26,7 @@ function App() {
         <Route path='/' element={<Layout/>}>
           <Route index path='' element={<Main/>} />
           <Route path='/catalog' element={<Catalog/>}/>
-          <Route path='/calculator' element={<Calculator/>}/>
+          <Route path="/catalog/:id" element={<Item/>}/>
         </Route>
 
       </Routes>

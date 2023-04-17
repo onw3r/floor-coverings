@@ -4,7 +4,8 @@
     margin-top: 20px;
     padding: 0 20px;
 }
-h1{
+.catalog-title{
+    text-align: center;
     color: #1d1a1a;;
     margin-bottom: 15px;
 }
